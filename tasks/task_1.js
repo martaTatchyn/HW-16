@@ -1,3 +1,16 @@
+class Account {
+  constructor({ login, email }) {
+    this.email = email;
+    this.login = login;
+  }
+
+  getInfo() {
+    console.log(`email: ${this.email}, login: ${this.login}`);
+
+    return `email: ${this.email}, login: ${this.login}`;
+  }
+}
+
 console.log(Account.prototype.getInfo); // function
 
 const mango = new Account({

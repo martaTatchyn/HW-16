@@ -1,3 +1,19 @@
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
+  getItems() {
+    return this.items;
+  }
+  addItem(newItem) {
+    return this.items.push(newItem);
+  }
+  removeItem(removeItem) {
+    const index = this.items.indexOf(removeItem);
+    return items.splice(index, 1);
+  }
+}
+
 const storage = new Storage([
   "Нанітоіди",
   "Пролонгер",
